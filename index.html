@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Portfolio</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav id="sidebar" class="active">
+				<div class="sidebar-header">
+						<button type="button" class="sidebarCollapse btn btn-info">
+							<span class="navbar-toggler-icon">   
+								<i class="fas fa-times"></i>
+							</span>
+						</button><!-- menu close button -->
+					<h3 class="text-center">Menu</h3>
+				</div>
+
+				<ul class="list-unstyled components">
+					<li><a data-value="about" href="#">About</a></li>
+					<li><a data-value="skills" href="#">Skills</a></li>
+					<li><a data-value="work" href="#">Work</a></li>
+					<li><a data-value="contact" href="#">Contact</a></li>
+				</ul>
+			</nav><!-- end menu sidebar -->
+
+			<div id="content" class="active"> 
+
+				<button id="menu-btn" type="button" class="sidebarCollapse">
+					<i class="fas fa-bars"></i>
+				</button><!-- menu button -->
+				
+				<div class="container-fluid">
+					<section id="header">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<img class="img-fluid" src="images/beardman.gif" alt="beardman">
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<h1 class="mr-auto">Hi, I'm José</h1>
+							</div>
+						</div>
+						<img class="img-fluid" src="images/shape_header3.png" alt="shape_header">
+					</section><!-- end header -->
+
+					<section id="about">
+						<h2>About</h2>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel placerat magna, 
+									eget scelerisque est. Ut tincidunt, sem vehicula sodales blandit, sem nisi pharetra dui, 
+									hendrerit pulvinar ante lectus eu lectus. Quisque sed enim fermentum, condimentum nisi nec, 
+									consequat lacus. Sed massa metus, tincidunt quis condimentum eget, viverra id sem. Nam dapibus.
+								</p>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<img class="profile-photo img-fluid" src="images/jose.jpg" alt="profile-picture">
+							</div>
+						</div>
+					</section><!-- end about -->
+				</div><!-- end container -->
+
+				<div class="container">
+					<section id="skills">
+						<h2>Skills</h2>
+						<div class="row">
+							<div class="col-sm-3 col-xs-12">
+								<div class="chart" data-percent="85">
+									<span class="percent">HTML</span>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-12">
+								<div class="chart" data-percent="40">
+									<span class="percent">CSS</span>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-12">
+								<div class="chart" data-percent="65">
+									<span class="percent">Javascript</span>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-12">
+								<div class="chart" data-percent="85">
+									<span class="percent">PHP</span>
+								</div>
+							</div>
+						</div>
+					</section><!-- end skills -->
+				</div><!-- end container -->
+
+				<div class="container-fluid">
+					<section id="work">
+						<h2>Work</h2>
+						<div class="row">
+							<div class="col-sm-3 col-xs-12">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio1.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="col-sm-3 col-xs-12">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio2.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="col-sm-3 col-xs-12">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio3.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="d-none d-sm-block col-sm-3">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio4.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="d-none d-sm-block col-sm-3">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio5.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="d-none d-sm-block col-sm-3">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio6.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="d-none d-sm-block col-sm-3">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio7.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<div class="d-none d-sm-block col-sm-3">
+								<a href="#">
+									<img class="img-fluid" src="images/portfolio/portfolio8.jpg" alt="portfolio">
+									<div class="overlay"></div>
+								</a>
+							</div>
+							<button class="button">See More</button>
+						</div>
+					</section><!-- end work -->
+
+					<section id="contact">
+						<div class="overlay">
+							<div id="contact-content">
+								<h2>Contact Me</h2>
+								<div class="row" >
+									<div id="info" class="col-sm-6 col-xs-12">
+										<h3 class="text-center d-none d-sm-block">Get in touch</h3>
+										<p class="d-none d-sm-block">I'm very approachable and I would love to speak to you. Feel free to call, send me an email, Tweet me or complete the enquiry form</p>
+										<ul id="contact-list">
+											<li><i class="fas fa-phone"></i>1-829-849-2121</li>
+											<li><i class="far fa-envelope"></i>jmrv002@gmail.com</li>
+											<li><i class="fab fa-instagram"></i>@jmrv002</li>
+											<li><i class="fab fa-facebook-square"></i>Joel Rodriguez Varona</li>
+										</ul>
+									</div><!-- end info -->
+
+									<div id="form" class="col-sm-6 col-xs-12">
+										<h3 class="text-center">Message</h3>
+										<form action="joke.html">
+											<input type="text" placeholder="YOUR NAME">
+											<input type="text" placeholder="EMAIL ADDRESS">
+											<input type="text" placeholder="TELEPHONE NUMBER">
+											<textarea placeholder="YOUR MESSAGE"></textarea>
+											<button class="button" type="submit">SUBMIT</button>
+										</form>
+									</div><!-- end form -->
+								</div>
+							</div><!-- end contact content -->
+						</div><!-- end overlay -->
+					</section><!-- end contact -->
+					<footer class="text-center">Copyright &copy; All Rights Reserved</footer>
+				</div><!-- end container -->
+			</div><!-- end content -->
+		</div><!-- end wrappper -->
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+		<!-- piechart -->
+		<script src='js/jquery.easypiechart.min.js'></script>
+		<!-- work section - hover -->
+		<script src="js/modernizr.min.js"></script>
+		<script src='js/jquery.hoverdir.js'></script>
+		<!-- javascript -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
