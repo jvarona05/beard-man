@@ -1,5 +1,7 @@
 body{
 	font-family: 'Quicksand', sans-serif;
+  background-color: #f2ead7;
+  color: #4f4953;
 }
 
 section h2{
@@ -26,6 +28,16 @@ section h2{
 	 margin-left: 0; 
 }
 
+.list p{
+  font-size: 25px;
+}
+
+.list .number {
+    color: #4d6a74;
+    margin-right: 13px;
+    font-size: 45px;
+}
+
 /*** menu btn ***/
 
 #menu-btn{
@@ -33,8 +45,8 @@ section h2{
 	top: 0;
 	right: 0;
 	border: 0;
-	background-color: white;
-	color: #ff1c73;
+	background-color: #f2ead7;
+  color: #4f4953;
 	font-size: 2em;
 	margin: 40px;
 	z-index: 990;
@@ -117,10 +129,13 @@ section h2{
 
 /*** Header ***/
 
+#header{
+  margin: 70px 0;
+}
+
 #header h1 {
 	font-size: 3.5em;
 	position: absolute;
-	right: 20%;
 	top: 40%;
 }
 
@@ -140,8 +155,12 @@ section h2{
 /*** About ***/
 
 #about{
-	background-color: #ff1c73;
+	background-color: #4d6a74;
 	color: white;
+}
+
+#about .text{
+  margin: 0 35px;
 }
 
 .profile-photo {
@@ -178,13 +197,13 @@ section h2{
 	}
 }
 
-/*** Skills ***/
+/*** reasons ***/
 
-#skills{
+#reasons{
 	margin-bottom: 150px;
 }
 
-#skills h2{
+#reasons h2{
 	margin: 100px 0;
 }
 
@@ -209,14 +228,33 @@ section h2{
 }
 
 @media (max-width: 576px) {
-	#skills [class*="col-"]{
+	#reasons [class*="col-"]{
 		text-align: center;
 		margin-bottom: 40px;
 	}
 
-	#skills h2{
+	#reasons h2{
 		margin: 60px 0;
 	}
+}
+
+/***** beard-types *****/
+
+#beard-types{
+  background-color: #4d6a74;
+  padding: 50px 100px;
+  text-align: center;
+}
+
+#beard-types h2{
+  margin-bottom: 50px;
+  color: white;
+}
+
+#beard-types img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 /*** Work ***/
@@ -324,7 +362,7 @@ footer{
 	padding-top: 10px;
 }
 
-/*****portfolio hover ****/
+/***** portfolio hover ****/
 
 #work [class*="col-"] a,
 #work [class*="col-"] a img {
