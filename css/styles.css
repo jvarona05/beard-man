@@ -69,7 +69,7 @@ section h2{
 	right: 0;
 	height: 150vh;
 	z-index: 999;
-	background: #C2185B;
+	background: #e4d4b0;
 	color: white;
 	transition: all 0.3s;
 }
@@ -87,12 +87,12 @@ section h2{
 
 #sidebar .sidebar-header {
 	padding: 20px;
-	background: #E91E63;
+	background: #455c65;
 }
 
 #sidebar ul li a {
 	text-align: center;
-	color: white;
+	color: #4f4953;
 	padding: 10px;
 	font-size: 1.1em;
 	display: block;
