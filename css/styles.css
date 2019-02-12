@@ -4,6 +4,13 @@ body{
   color: #4f4953;
 }
 
+#introduction,
+#beard-types,
+#treatments{
+  background-color: #4d6a74;
+  color: white;
+}
+
 section h2{
 	text-align: center;
 	font-size: 3em;
@@ -139,10 +146,6 @@ section h2{
 	top: 40%;
 }
 
-#about [class*="col-"]{
-	padding: 0;
-}
-
 @media (max-width: 576px) {
 	#header h1 { 
 		position: static;
@@ -152,49 +155,23 @@ section h2{
 	}
 }
 
-/*** About ***/
+/*** introduction ***/
 
-#about{
-	background-color: #4d6a74;
-	color: white;
+#introduction{
+  padding: 35px 0;
 }
 
-#about .text{
+#introduction h2{
   margin: 0 35px;
 }
 
-.profile-photo {
+#introduction .profile-photo {
 	height: 200px;
 	width: 200px;	
 	border-radius: 50%;
 	border:8px solid white;
 	margin: auto;    
 	display: block;
-}
-
-#about p{
-	padding: 0 80px;
-	text-align: justify;
-	line-height: 35px;
-}
-
-#about [class*="col-"]{
-	margin: 60px 0;
-}
-
-@media (max-width: 576px) {
-
-	#about h2 { 
-		padding-top: 50px;
-	}
-
-	#about [class*="col-"]{
-		margin: 30px 0;
-	}
-
-	#about p{
-		padding: 0 40px;
-	}
 }
 
 /*** reasons ***/
@@ -241,20 +218,42 @@ section h2{
 /***** beard-types *****/
 
 #beard-types{
-  background-color: #4d6a74;
   padding: 50px 100px;
   text-align: center;
 }
 
 #beard-types h2{
   margin-bottom: 50px;
-  color: white;
 }
 
 #beard-types img {
-    width: 250px;
-    height: 250px;
     border-radius: 50%;
+}
+
+/*** beard quiz ***/
+
+#beard-quiz{
+  height: 200px;
+  padding-top: 65px;
+}
+
+#beard-quiz button{
+  background: #4a6974;
+  color: white;
+  padding: 10px;
+  font-size: 35px;
+}
+
+#beard-quiz button:hover{
+  background: #455b63
+}
+
+/*** treatments ***/
+
+#treatments img{
+  border-radius: 20%;
+  background-color: white;
+  padding-bottom: 20px;
 }
 
 /*** Work ***/
