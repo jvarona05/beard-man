@@ -6,7 +6,7 @@ body{
 
 #introduction,
 #beard-types,
-#treatments{
+#beard-quiz{
   background-color: #4d6a74;
   color: white;
 }
@@ -233,8 +233,8 @@ section h2{
 /*** beard quiz ***/
 
 #beard-quiz{
-  height: 200px;
-  padding-top: 65px;
+  height: 300px;
+  padding-top: 110px;
 }
 
 #beard-quiz button{
@@ -250,10 +250,35 @@ section h2{
 
 /*** treatments ***/
 
+#treatments{
+  padding: 40px 10%;
+}
+
 #treatments img{
   border-radius: 20%;
   background-color: white;
   padding-bottom: 20px;
+}
+
+#treatments h2{
+  padding: 20px 0 50px 0;
+}
+
+#treatments p{
+  font-size: 25px;
+  text-align: justify;
+}
+
+#treatments b{
+  color: #4d6a74;
+
+    font-size: 30px;
+}
+
+#treatments .row{
+  margin-bottom: 45px;
+  display:flex;
+  align-items:center;
 }
 
 /*** Work ***/
@@ -356,8 +381,8 @@ section h2{
 footer{
 	height: 50px;
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: #455c65;
+  color: white;
 	padding-top: 10px;
 }
 
