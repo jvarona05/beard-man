@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/tingle.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
@@ -33,17 +34,16 @@
 				</ul>
 			</nav><!-- end menu sidebar -->
 
-			<div id="content" class="active"> 
+      <button id="menu-btn" type="button" class="sidebarCollapse">
+        <i class="fas fa-bars"></i>
+      </button><!-- menu button -->
 
-				<button id="menu-btn" type="button" class="sidebarCollapse">
-					<i class="fas fa-bars"></i>
-				</button><!-- menu button -->
-				
+			<div id="content" class="active"> 
 				<div class="container-fluid">
 					<section id="header">
 						<div class="row">
 							<div class="col-sm-6 col-xs-12">
-								<img class="img-fluid" src="images/beard-man.jpg" alt="beardman">
+								<img class="img-fluid custom-class-1" src="images/beard-man.jpg" alt="beardman">
 							</div>
 							<div class="col-sm-6 col-xs-12">
 								<h1 class="mr-auto">Hi, I'm Beard Man</h1>
@@ -99,38 +99,20 @@
           <h2>Beard types</h2>
           <div class="row list">
             <div class="col-sm-3 col-xs-12">
-              <!-- 
-                A short beard is an ideal choice for those who find that their beard grows in slowly or those who find that the upkeep 
-                of a longer beard is too much work for them. If you are more comfortable with a clean-cut, short style, then start 
-                checking out what short beard options are trending lately to narrow down your decision.
-              -->
-              <img class="img-fluid" src="images/beard-types/short.jpg">
+              <img class="img-fluid beard-type" data-type="short" src="images/beard-types/short.jpg">
+              <p>Short</p>
             </div>
             <div class="col-sm-3 col-xs-12">
-              <!-- 
-                Do you like to have a bit more facial hair to show off, but without the commitment of a long and luxurious beard?
-                With a medium beard, you can have just enough hair to run your fingers through – without enough to end up getting your fingers tangled in it.
-                There are beard styles for medium beards ranging from sophisticated to rugged – and there’s surely one you’ll like and that will fit your preference.
-               -->
-              <img class="img-fluid" src="images/beard-types/medium.jpg">
+              <img class="img-fluid beard-type" data-type="medium" src="images/beard-types/medium.jpg">
+              <p>Medium</p>
             </div>
             <div class="col-sm-3 col-xs-12">
-              <!-- 
-                Whether you want to spot a hipster beard, a lumberjack beard, or replicate the old and wise look of Professor Dumbledore, a long beard can help you to do the trick.
-                The looks you can accomplish with long facial hair span a wide range, and it’s no wonder so many people strive to replicate the possibilities.
-                If you have the patience to grow out your beard to that length, and if you are dedicated to giving it the grooming and care that it will require, 
-                then a long beard just may be for you!
-               -->
-              <img class="img-fluid" src="images/beard-types/long.jpg">
+              <img class="img-fluid beard-type" data-type="long" src="images/beard-types/long.jpg">
+              <p>Long</p>
             </div>
             <div class="col-sm-3 col-xs-12">
-              <!-- 
-                A yeard is one of the biggest trends in beard growth – and it refers to growing out your beard for an entire year without touching it – to trim it, 
-                groom it, style it, or anything.  Let nature take its course and discover the natural beard that your facial hair will form over the 
-                course of 365 days. Some truly incredible yeards have been the results of such experiments, and yours just may join the yeard 
-                hall of fame if you give it some time to form and take shape.
-               -->
-               <img class="img-fluid" src="images/beard-types/year.jpg">
+               <img class="img-fluid beard-type" data-type="year" src="images/beard-types/year.jpg">
+               <p>Year</p>
             </div>           
           </div>
         </section><!-- end reasons -->
@@ -192,11 +174,8 @@
 
 		<!-- jquery -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
-		<!-- piechart -->
-		<script src='js/jquery.easypiechart.min.js'></script>
-		<!-- work section - hover -->
-		<script src="js/modernizr.min.js"></script>
-		<script src='js/jquery.hoverdir.js'></script>
+
+    <script src="js/tingle.js"></script>
 		<!-- javascript -->
 		<script src="js/main.js"></script>
 	</body>

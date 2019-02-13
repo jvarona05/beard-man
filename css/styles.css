@@ -45,6 +45,14 @@ section h2{
     font-size: 45px;
 }
 
+.blur {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px); 
+}
+
 /*** menu btn ***/
 
 #menu-btn{
@@ -184,35 +192,8 @@ section h2{
 	margin: 100px 0;
 }
 
-.chart {
-	position: relative;
-	display: inline-block;
-	width: 200px;
-	height: 200px;
-	text-align: center;
-}
-
-.chart canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.percent {
-	display: inline-block;
-	line-height: 200px;
-	z-index: 2;
-}
-
 @media (max-width: 576px) {
-	#reasons [class*="col-"]{
-		text-align: center;
-		margin-bottom: 40px;
-	}
 
-	#reasons h2{
-		margin: 60px 0;
-	}
 }
 
 /***** beard-types *****/
@@ -228,24 +209,7 @@ section h2{
 
 #beard-types img {
     border-radius: 50%;
-}
-
-/*** beard quiz ***/
-
-#beard-quiz{
-  height: 300px;
-  padding-top: 110px;
-}
-
-#beard-quiz button{
-  background: #4a6974;
-  color: white;
-  padding: 10px;
-  font-size: 35px;
-}
-
-#beard-quiz button:hover{
-  background: #455b63
+    margin-bottom: 25px;
 }
 
 /*** treatments ***/
@@ -281,99 +245,22 @@ section h2{
   align-items:center;
 }
 
-/*** Work ***/
+/*** beard quiz ***/
 
-#work{
-	background-color: #ff1c73;
-	padding: 50px 100px;
+#beard-quiz{
+  height: 300px;
+  padding-top: 110px;
 }
 
-#work h2{
-	margin-bottom: 50px;
-	color: white;
+#beard-quiz button{
+  background: #4a6974;
+  color: white;
+  padding: 10px;
+  font-size: 35px;
 }
 
-#work [class*="col-"]{
-	margin-bottom: 50px;
-}
-
-@media (max-width: 576px) {
-	#work{
-		padding: 40px 50px;
-	}
-}
-
-/*** contact ***/
-
-#contact h2,
-#contact h3{
-	margin-bottom: 50px;
-}
-
-#contact {
-	background-image: url("../images/contact.jpg"); 
-	background-attachment: fixed; 
-	background-size: cover; 
-	height: 100%;
-}
-
-#contact .overlay {
-	padding: 50px 120px;
-	width:100%;
-	height:100%;
-	background-color: rgba(50, 44, 44, 0.8);
-}
-
-#contact-content{
-	 color: white; 
-}
-
-#contact-list li{
-	margin-bottom: 10px;
-	font-size: 1.1em;
-}
-
-#contact-list i{
-	margin: 10px;
-	margin-left: 0px;
-	color: #ff1c73;
-}
-
-#form input,
-#form  textarea, 
-#contact button{
-	background-image:none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	display: block;
-	width: 100%;
-	margin-bottom: 15px;
-	padding: 10px;
-	border: 0;
-}
-
-#form input{
-	height: 30px;
-}
-
-#form textarea{
-	height: 100px;
-}
-
-@media (max-width: 576px) {
-
-	#contact .overlay {
-		padding: 50px 20px;
-	}
-
-	#contact-list{
-		margin-bottom: 50px;
-	}
-
-	#contact-list li {
-		list-style-type: none;
-	}
+#beard-quiz button:hover{
+  background: #455b63
 }
 
 /*** footer ***/
@@ -386,32 +273,7 @@ footer{
 	padding-top: 10px;
 }
 
-/***** portfolio hover ****/
-
-#work [class*="col-"] a,
-#work [class*="col-"] a img {
-	display: block;
-	position: relative;
-}
-#work [class*="col-"] a {
-	overflow: hidden;
-}
-#work [class*="col-"] a div {
-	position: absolute;
-	background: #333;
-	background: rgba(75,75,75,0.7);
-	width: 100%;
-	height: 100%;
-}
-#work [class*="col-"] a div span {
-	display: block;
-	padding: 10px 0;
-	margin: 40px 20px 20px 20px;
-	text-transform: uppercase;
-	font-weight: normal;
-	color: rgba(255,255,255,0.9);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	border-bottom: 1px solid rgba(255,255,255,0.5);
-	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+.beard-type:hover {
+  opacity: .7;  
 }
 
