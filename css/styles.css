@@ -146,6 +146,7 @@ section h2{
 
 #header{
   margin: 70px 0;
+  text-align: center;
 }
 
 #header h1 {
@@ -155,11 +156,13 @@ section h2{
 }
 
 @media (max-width: 576px) {
+  #header {
+     margin: 70px 0 20px 0;
+  }
 	#header h1 { 
 		position: static;
-		font-size: 3em;
-		text-align:center;
-		margin-bottom: 30px;
+    font-size: 3em;
+    margin-top: 29px;
 	}
 }
 
@@ -182,6 +185,13 @@ section h2{
 	display: block;
 }
 
+@media (max-width: 576px) {
+  #introduction h2 { 
+    font-size: 2em;
+    margin-bottom: 35px;
+  }
+}
+
 /*** reasons ***/
 
 #reasons{
@@ -192,8 +202,18 @@ section h2{
 	margin: 100px 0;
 }
 
-@media (max-width: 576px) {
+#reasons .list{
+  margin-left: 10%;
+}
 
+@media (max-width: 576px) {
+  #reasons h2 {
+    margin: 50px 0;
+  }
+
+  #reasons .list{
+    margin: 0;
+  }
 }
 
 /***** beard-types *****/
@@ -210,6 +230,16 @@ section h2{
 #beard-types img {
     border-radius: 50%;
     margin-bottom: 25px;
+}
+
+.beard-type:hover {
+  opacity: .7;  
+}
+
+@media (max-width: 576px) {
+  #beard-types{
+    padding: 50px 50px;
+  }
 }
 
 /*** treatments ***/
@@ -271,9 +301,5 @@ footer{
 	background-color: #455c65;
   color: white;
 	padding-top: 10px;
-}
-
-.beard-type:hover {
-  opacity: .7;  
 }
 
