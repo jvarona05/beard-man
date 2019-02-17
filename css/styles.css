@@ -207,6 +207,9 @@ section h2{
 }
 
 @media (max-width: 576px) {
+  #reasons{
+    margin-bottom: 20px;
+  }
   #reasons h2 {
     margin: 50px 0;
   }
@@ -240,6 +243,10 @@ section h2{
   #beard-types{
     padding: 50px 50px;
   }
+  
+  #beard-types h2{
+    margin-bottom: 70px;
+  }
 }
 
 /*** treatments ***/
@@ -252,6 +259,7 @@ section h2{
   border-radius: 20%;
   background-color: white;
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 #treatments h2{
@@ -273,6 +281,20 @@ section h2{
   margin-bottom: 45px;
   display:flex;
   align-items:center;
+}
+
+@media (max-width: 768px) {
+  #treatments [class*="col-"]{
+    text-align: center;
+  }
+
+  #treatments img{
+    margin-bottom: 50px;
+    float: none!important;
+  }
+
+  .one { order: 2; }
+  .two { order: 1; }
 }
 
 /*** beard quiz ***/
