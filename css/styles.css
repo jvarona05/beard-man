@@ -297,6 +297,16 @@ section h2{
   .two { order: 1; }
 }
 
+/*** grow-beard ***/
+
+#grow-beard{
+  margin-bottom: 100px;
+}
+
+#grow-beard h2{
+  margin-bottom: 70px;
+}
+
 /*** beard quiz ***/
 
 #beard-quiz{
